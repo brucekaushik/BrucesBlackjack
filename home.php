@@ -7,6 +7,11 @@ session_start();
 
 $_SESSION['score'] = 0;
 
+// unset
+unset($_SESSION['app_name']);
+unset($_SESSION['verify_back_to']);
+unset($_SESSION['action']);
+
 // include database connections
 require '../BrucesAdminArea/includes/dbConnect.inc.php';
 
