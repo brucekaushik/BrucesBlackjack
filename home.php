@@ -5,21 +5,17 @@
 // start a session
 session_start();
 
-$ses_score = 0;
-session_register("ses_score");
+$_SESSION['score'] = 0;
 
 // include database connections
-require 'includes/dbConnect.inc.php';
+require '../BrucesAdminArea/includes/dbConnect.inc.php';
 
-echo "Username => " . $ses_username . "<br>";
-echo "User Level =>" . $ses_user_level . "<br>";
-echo "User Active? => " . $ses_user_active . "<br>";
-echo "Logged In? => " . $ses_loggedin . "<br>";
-echo "Logged Out? => " . $ses_loggedout . "<br>";
-echo "Score => " . $ses_score . "<br>";
+echo '<pre>';
+print_r($_SESSION);
+echo '</pre>';
 
 // if user is logged in, user is active..
-if($ses_loggedin == "yes" && $ses_user_active == "yes"){
+if($_SESSION['loggedin'] == "yes" && $_SESSION['user_active'] == "yes"){
 
 ?>
 
@@ -32,7 +28,7 @@ if($ses_loggedin == "yes" && $ses_user_active == "yes"){
 <body>
 
     <div class="centeralign">
-        <a href='../08-adminArea/home.php?action=logout'>Logout</a>
+        <a href='../BrucesAdminArea/home.php?action=logout'>Logout</a>
     </div>
 
     <div class="wrapper">
@@ -56,8 +52,8 @@ if($ses_loggedin == "yes" && $ses_user_active == "yes"){
     else{
         
         // connect to database
-        require 'includes/dbConnect.inc.php';
-        
+        require '../BrucesAdminArea/includes/dbConnect.inc.php';
+    	        
         // include deck and values
         require 'includes/cardsNvalues.inc.php';
         

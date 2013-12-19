@@ -1,3 +1,10 @@
+<?php 
+
+$ses_username = $_SESSION['username'];
+
+
+?>
+
 <br><br>
 <div class="bj_msgs">
 
