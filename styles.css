@@ -1,0 +1,115 @@
+.wrapper{
+	width: 95%;
+	height: 95%;
+	border: 2px double #A65C3D;
+	margin: 1.5% auto;
+	overflow: scroll;
+}
+
+.centeralign{
+	text-align: center;
+}
+
+.buttonAnchor{
+	padding: 10px;
+	width: 15%;
+	background: #7F7F7F;
+	color: white;
+	display: block;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.header h1{
+	font-family: "ChunkFiveRoman";
+	text-align: center;
+	color: #A65C3D;
+}
+
+.rules{
+	margin: 0 auto;
+	width: 55%;
+}
+
+.rules li{
+	padding-bottom: 10px;
+}
+
+a#play{
+	padding: 10px;
+	background: #7F7F7F;
+	color: white;
+	width: 400px;
+	display: block;
+	text-align: center;
+	margin: 0 auto;
+}
+
+/* styles for column1 */
+
+	.column1{
+		float:left;
+		width: 29%;
+		text-align: center;
+	}
+	
+	.bj_scores{
+		margin-top: 20%;
+	}
+	
+	.timer{
+		margin-top: 15%;
+	}
+	
+	span#timer{
+		font-size: 30px;
+	}
+
+/* styles for column2 */
+
+	.column2{
+		float:left;
+		width: 40%;
+		text-align: center;
+	}
+	
+	.bj_msgs{
+		font-weight: bold;
+	}
+	
+	.bj_msgs .green{
+		color: green;
+	}
+	
+	.bj_msgs .red{
+		color: red;
+	}
+	
+	.bj_msgs .orange{
+		color: #E79767;
+	}
+	
+	.card{
+		padding: 3px;
+	}
+
+/* styles for column3 */
+
+	.column3{
+		float:left;
+		width: 29%;
+		text-align: center;
+	}
+	
+	#userStats{
+		border: 1px solid black;
+		margin-left: 4%;
+		width: 65%;
+		margin-top: 37%;
+	}
+	
+	#userStats td{
+		border: 1px solid black;
+		padding: 5px;
+	}
+
